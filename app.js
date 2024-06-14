@@ -61,7 +61,7 @@ createApp({
   fields: {
     name: {
       label: "What's your full name?",
-      helptext: "Howdy Stranger, Let's get acquainted. ",
+      helptext: "Hello Stranger, Let's get acquainted. ",
       value: "",
       validations: [
         {
@@ -139,21 +139,21 @@ createApp({
           test: (value) => value,
         },
         {
-          message: "Zip must be 5 digits",
-          test: (value) => !isNaN(value) && value.length === 5,
+          message: "Zip must be 6 digits",
+          test: (value) => !isNaN(value) && value.length === 6,
         },
       ],
     },
     donationAmount: {
-      label: "Donation Amount",
+      label: "Your Contact Number",
       value: "",
       validations: [
         {
-          message: "Donation Amount is a required field",
+          message: "Contact Number is a required field",
           test: (value) => value,
         },
         {
-          message: "Donation Amount must be a valid number",
+          message: "Contact Number must be a valid number",
           test: (value) => !isNaN(value),
         },
       ],
